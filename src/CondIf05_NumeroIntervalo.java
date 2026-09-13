@@ -7,7 +7,7 @@ Ou está fora desse intervalo
  */
 
 import java.util.Scanner;
-public class CondIf05 {
+public class CondIf05_NumeroIntervalo {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

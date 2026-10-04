@@ -3,6 +3,7 @@ Maior de três números
 Leia três números e informe qual é o maior.
 �� Dica: compare progressivamente.
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf08_MaiorQue {

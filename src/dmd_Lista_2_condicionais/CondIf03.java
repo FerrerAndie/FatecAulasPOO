@@ -4,6 +4,7 @@ Leia a idade de uma pessoa:
 "Maior de idade" → idade ≥ 18
 "Menor de idade" → idade < 18
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf03 {

@@ -5,6 +5,7 @@ Leia o valor de uma compra:
 < 100 → sem desconto
 Exiba o valor final.
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf10_DescontoCompras {

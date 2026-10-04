@@ -4,6 +4,7 @@ Leia um número inteiro e classifique:
 "Negativo" → menor que 0
 "Zero" → igual a 0
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf01 {

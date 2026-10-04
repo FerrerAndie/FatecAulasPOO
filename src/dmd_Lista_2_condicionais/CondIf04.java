@@ -3,6 +3,7 @@
 Leia dois números e informe qual é o maior.
 �� Extra: trate também quando os dois forem iguais.
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf04 {

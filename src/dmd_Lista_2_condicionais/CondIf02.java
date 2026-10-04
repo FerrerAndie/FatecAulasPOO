@@ -4,6 +4,7 @@ Leia um número inteiro e informe:
 "Par" → quando o resto da divisão por 2 for 0
 "Ímpar" → caso contrário
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf02 {

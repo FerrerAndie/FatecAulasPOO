@@ -5,6 +5,7 @@ Está entre 10 e 50 (inclusive)
 Ou está fora desse intervalo
 �� Dica: use && (E lógico)
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf05_NumeroIntervalo {

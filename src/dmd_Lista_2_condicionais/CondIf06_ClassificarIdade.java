@@ -6,6 +6,7 @@ Adolescente: 13 a 17
 Adulto: 18 a 59
 Idoso: 60 ou mais
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf06_ClassificarIdade {

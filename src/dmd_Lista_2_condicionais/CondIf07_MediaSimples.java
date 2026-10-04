@@ -6,6 +6,7 @@ Classifique:
 "Recuperação" → 4 ≤ média < 6
 "Reprovado" → média < 4
  */
+package dmd_Lista_2_condicionais;
 
 import java.util.Scanner;
 public class CondIf07_MediaSimples {

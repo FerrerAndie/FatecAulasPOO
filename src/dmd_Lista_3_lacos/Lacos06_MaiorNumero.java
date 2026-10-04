@@ -2,6 +2,7 @@
 Exercício 6 – Maior número
 Leia 5 números inteiros digitados pelo usuário e informe o maior número.
  */
+package dmd_Lista_3_lacos;
 
 import java.util.Scanner;
 

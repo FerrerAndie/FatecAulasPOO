@@ -2,6 +2,7 @@
 Leia 10 números inteiros e informe quantos são positivos e negativos.
 Considere o número 0 como neutro.
  */
+package dmd_Lista_3_lacos;
 
 import java.util.Scanner;
 public class Lacos07_PositivosNegativos {

@@ -1,6 +1,8 @@
 /*
  * Faça um programa que calcule e exiba a soma dos números de 1 até 100.
  */
+package dmd_Lista_3_lacos;
+
 public class Lacos04_Soma1_100 {
 
 	public static void main(String[] args) {

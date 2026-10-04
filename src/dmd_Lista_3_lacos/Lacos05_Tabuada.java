@@ -2,6 +2,7 @@
 Exercício 5 – Tabuada
 Peça ao usuário um número inteiro e exiba a tabuada desse número de 1 até 10.
  */
+package dmd_Lista_3_lacos;
 
 import java.util.Scanner;
 

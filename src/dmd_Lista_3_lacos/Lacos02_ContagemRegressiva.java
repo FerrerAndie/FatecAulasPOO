@@ -1,6 +1,8 @@
 /*
  * Faça um programa que exiba os números de 10 até 1.
  */
+package dmd_Lista_3_lacos;
+
 public class Lacos02_ContagemRegressiva {
 
 	public static void main(String[] args) {

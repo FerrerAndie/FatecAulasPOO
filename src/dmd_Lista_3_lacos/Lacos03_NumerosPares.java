@@ -1,6 +1,8 @@
 /*
  * Faça um programa que exiba todos os números pares de 1 até 50.
  */
+package dmd_Lista_3_lacos;
+
 public class Lacos03_NumerosPares {
 
 	public static void main(String[] args) {

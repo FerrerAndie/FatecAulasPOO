@@ -2,6 +2,7 @@
 Exercício 1 – Contagem de 1 a 10
 Faça um programa que exiba os números de 1 até 10 usando for.
  */
+package dmd_Lista_3_lacos;
 
 public class Lacos01_Contagem {
 

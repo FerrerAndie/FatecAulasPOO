@@ -1,7 +1,9 @@
 /*
  * Exercícios aula de arrays usando if, for
  */
-public class Aula_4_Arrays {
+package dmd_Lista_4_Arrays;
+
+public class Aula4Arrays {
 	//Funcão imprimir array
 	private static void imprimir(int[]p) {
 		System.out.print("[");

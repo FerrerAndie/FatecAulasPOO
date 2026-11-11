@@ -5,6 +5,7 @@
  Calcular soma diagonal sencundária
  Mostrar as duas somas 
  */
+package exerciciosAula;
 
 import java.util.Scanner;
 

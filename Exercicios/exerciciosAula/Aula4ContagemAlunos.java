@@ -2,6 +2,7 @@
  * Exercício matriz. Contar os alunos presentes na sala de aula.
  * 18/nov/2026
  */
+package exerciciosAula;
 
 import java.util.Scanner;
 

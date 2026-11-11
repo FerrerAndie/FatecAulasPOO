@@ -1,0 +1,19 @@
+/*
+ * Faça um programa que exiba todos os números pares de 1 até 50.
+ */
+package lista3;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		int i;
+		
+		for(i = 1; i <= 50; i++) {
+			if (i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}

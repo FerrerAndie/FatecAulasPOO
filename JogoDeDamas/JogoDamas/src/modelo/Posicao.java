@@ -1,45 +1,53 @@
 package modelo;
 
-import java.util.Locale;
 
-/** Valor imutavel: coluna de 0 a 7, linha de 1 a 8. A1 e escura. */
-public final class Posicao {
-    private final int coluna;
-    private final int linha;
+public class Posicao {
+    private char coluna; // 'A' até 'H'
+    private int linha;   // 1 até 8
 
-    public Posicao(int coluna, int linha) {
-        if (coluna < 0 || coluna > 7 || linha < 1 || linha > 8) {
-            throw new IllegalArgumentException("Coordenada invalida: use A1 ate H8.");
-        }
-        this.coluna = coluna;
+
+    public Posicao(char coluna, int linha) {
+        this.coluna = Character.toUpperCase(coluna);
         this.linha = linha;
     }
 
-    public static Posicao de(String texto) {
-        if (texto == null || !texto.matches("[a-hA-H][1-8]")) {
-            throw new IllegalArgumentException("Coordenada invalida: use A1 ate H8.");
-        }
-        String normalizado = texto.toUpperCase(Locale.ROOT);
-        return new Posicao(normalizado.charAt(0) - 'A', normalizado.charAt(1) - '0');
+
+    public char getColuna() {
+        return coluna;
     }
 
-    public int getColuna() { return coluna; }
-    public int getLinha() { return linha; }
-    public boolean isEscura() { return (coluna + linha) % 2 == 1; }
 
-    /** Retorna null quando o deslocamento sair do tabuleiro. */
-    public Posicao deslocar(int colunas, int linhas) {
-        int c = coluna + colunas;
-        int l = linha + linhas;
-        return c < 0 || c > 7 || l < 1 || l > 8 ? null : new Posicao(c, l);
+    public int getLinha() {
+        return linha;
     }
 
-    @Override public boolean equals(Object outro) {
-        if (!(outro instanceof Posicao)) { return false; }
-        Posicao p = (Posicao) outro;
-        return coluna == p.coluna && linha == p.linha;
+
+    // Converte coluna 'A'-'H' para índice de matriz 0-7
+    public int getColunaIndex() {
+        return coluna - 'A';
     }
 
-    @Override public int hashCode() { return (linha - 1) * 8 + coluna; }
-    @Override public String toString() { return "" + (char) ('A' + coluna) + linha; }
+
+    // Converte linha 1-8 para índice de matriz 0-7 (invertendo para o display correto)
+    public int getLinhaIndex() {
+        return 8 - linha;
+    }
+
+
+    public static Posicao fromIndices(int linhaIndex, int colunaIndex) {
+        char col = (char) ('A' + colunaIndex);
+        int lin = 8 - linhaIndex;
+        return new Posicao(col, lin);
+    }
+
+
+    public boolean ehValida() {
+        return coluna >= 'A' && coluna <= 'H' && linha >= 1 && linha <= 8;
+    }
+
+
+    @Override
+    public String toString() {
+        return "" + coluna + linha;
+    }
 }
